@@ -40,10 +40,10 @@ This project depends on multiple models and tool libraries. It is recommended to
 ├── experiment/  
 ├── R1PhotoData/  
 ├── data/  
-    └── citynav/ # Data annotation directory  
-    └── rgbd-new/ # Raw image files  
-    └── training_data/ # Training data directory  
-    └── ...  
+│    └── citynav/ # Data annotation directory  
+│    └── rgbd-new/ # Raw image files  
+│    └── training_data/ # Training data directory  
+│    └── ...  
 ├── data_examples/ # Examples of some training data  
 ├── eval.py # Model inference and evaluation script  
 ├── open-r1-multimodal/ # GRPO training directory  
