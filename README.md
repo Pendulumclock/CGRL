@@ -17,8 +17,8 @@ This project depends on multiple models and tool libraries. It is recommended to
 ### Install Conda Environment
 
 ```bash
-- conda create -n flightgpt python=3.10
-- conda activate flightgpt
+- conda create -n CGRL python=3.10
+- conda activate CGRL
 
 - pip install -r requirements.txt
 ```
