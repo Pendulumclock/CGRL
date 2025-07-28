@@ -38,10 +38,10 @@ This project depends on multiple models and tool libraries. It is recommended to
 ### 📦 Project Structure
 ├── model_weight/ # Directory for model weights (download manually)  
 ├── experiment/  
-├── R1PhotoData/
-├── curriculum_learning/
-│    └── calculate_difficulty/ # Scripts and modules for computing sample difficulty scores
-│    └── gaussian_sampler/ # Dynamic sampling strategy based on Gaussian curriculum scheduling
+├── R1PhotoData/  
+├── curriculum_learning/  
+│    └── calculate_difficulty/ # Scripts and modules for computing sample difficulty scores  
+│    └── gaussian_sampler/ # Dynamic sampling strategy based on Gaussian curriculum scheduling  
 ├── data/  
 │    └── citynav/ # Data annotation directory  
 │    └── rgbd-new/ # Raw image files  
