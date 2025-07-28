@@ -38,7 +38,10 @@ This project depends on multiple models and tool libraries. It is recommended to
 ### 📦 Project Structure
 ├── model_weight/ # Directory for model weights (download manually)  
 ├── experiment/  
-├── R1PhotoData/  
+├── R1PhotoData/
+├── curriculum_learning/
+│    └── calculate_difficulty/ # Scripts and modules for computing sample difficulty scores
+│    └── gaussian_sampler/ # Dynamic sampling strategy based on Gaussian curriculum scheduling
 ├── data/  
 │    └── citynav/ # Data annotation directory  
 │    └── rgbd-new/ # Raw image files  
@@ -54,6 +57,47 @@ This project depends on multiple models and tool libraries. It is recommended to
 
 ---
 
+## 📈 Curriculum Learning
+
+1. Calculate difficulty
+Run the script to generate heatmaps and compute sample difficulty scores:
+
+```bash
+cd CGRL && python curriculum_learning/calculate_difiiculty/visual_attention_map.py
+```
+This script will:
+
+- Load navigation data from data_example.json
+
+- Run the model to extract cross-attention maps
+
+- Compute target area masks
+
+- Calculate difficulty scores
+
+- Visualize heatmaps overlaid on the original image with target areas
+
+- Save results to data_example_difficulty.json
+
+2. Run the Gaussian curriculum sampling
+Use the Gaussian curriculum sampler to resample training data based on difficulty:
+
+```bash
+cd CGRL && python curriculum_learning/gaussian_sampler/gaussian_sampler.py
+```
+
+This will:
+
+- Load the annotated difficulty scores
+
+- Perform dynamic sampling from easy to hard using a Gaussian distribution
+
+- Save sampled data to gaussian_samples.json
+
+3. Result Visualization
+
+You can use the show_location function to visualize the heatmap overlay and the target polygon.
+For debugging or analysis, all overlay images are saved to curriculum_learning/heatmap/.
 
 ## 🚀 Inference
 
