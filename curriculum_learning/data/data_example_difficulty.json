@@ -1,0 +1,90 @@
+[
+    {
+        "start_position": [
+            766,
+            32
+        ],
+        "landmark_bbox": [
+            [
+                958,
+                821,
+                1086,
+                947
+            ],
+            [
+                1818,
+                2446,
+                2383,
+                2858
+            ]
+        ],
+        "image_path": "curriculum_learning/data/picture/example.jpg",
+        "image_size": [
+            4001,
+            4001
+        ],
+        "episode_id": [
+            "cambridge_block_9",
+            416,
+            1
+        ],
+        "target_description": "A rectangular grass section within a quadrangle of buildings that include the hall in The Buttery and kitchen building, the red-lined grass section closest to St John's college chapel",
+        "target_processed_description": "rectangular grass section",
+        "target_type": "Ground",
+        "target_position": [
+            1607,
+            2833
+        ],
+        "surrounding_coordinates": [
+            [
+                1666,
+                2917
+            ],
+            [
+                1615,
+                2904
+            ],
+            [
+                1571,
+                2884
+            ],
+            [
+                1528,
+                2862
+            ],
+            [
+                1504,
+                2823
+            ],
+            [
+                1525,
+                2779
+            ],
+            [
+                1557,
+                2747
+            ],
+            [
+                1605,
+                2764
+            ],
+            [
+                1648,
+                2785
+            ],
+            [
+                1691,
+                2807
+            ],
+            [
+                1708,
+                2850
+            ],
+            [
+                1688,
+                2894
+            ]
+        ],
+        "difficulty": 0.9981624222144877
+    }
+]
