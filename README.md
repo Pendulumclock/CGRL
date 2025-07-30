@@ -1,5 +1,5 @@
 # 🚀 SA-GCS: Semantic-Aware Gaussian Curriculum Scheduling for UAV Vision-Language Navigation
-![Overview](./image/overview.png)
+![Overview](./images/overview.png)
 This project explores a curriculum learning strategy for UAV navigation tasks by leveraging the attention scores from the final layer of a Vision-Language Model (VLM) decoder. By analyzing the attention distribution between textual queries and image regions, we estimate the difficulty of each sample based on whether the model is focusing correctly on the target. 
 
 To further enhance training efficiency, we introduce a Gaussian-based difficulty-aware sampling strategy, which prioritizes samples of varying difficulty in a probabilistic manner. This approach significantly improves the performance of the navigation model on challenging scenarios.
