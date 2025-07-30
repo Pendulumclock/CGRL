@@ -1,5 +1,5 @@
-# 🚀 UAV Navigation with Curriculum Learning based on VLM Attention
-
+# 🚀 SA-GCS: Semantic-Aware Gaussian Curriculum Scheduling for UAV Vision-Language Navigation
+![Overview](./image/overview.png)
 This project explores a curriculum learning strategy for UAV navigation tasks by leveraging the attention scores from the final layer of a Vision-Language Model (VLM) decoder. By analyzing the attention distribution between textual queries and image regions, we estimate the difficulty of each sample based on whether the model is focusing correctly on the target. 
 
 To further enhance training efficiency, we introduce a Gaussian-based difficulty-aware sampling strategy, which prioritizes samples of varying difficulty in a probabilistic manner. This approach significantly improves the performance of the navigation model on challenging scenarios.
@@ -33,7 +33,6 @@ This project depends on multiple models and tool libraries. It is recommended to
 
 * Download data to `./data/`
 
-* And for sft, Download the cleaned_final.json to ./LLaMA-Factory/data
 
 ### 📦 Project Structure
 ├── model_weight/ # Directory for model weights (download manually)  
@@ -134,3 +133,12 @@ sh ./open-r1-multimodal/run_scripts/run_grpo_rec_lora.sh
 
 ---
 
+## 📌 Reproducibility and Computational Settings
+To ensure reproducibility:
+We fix the random seed to 42 in all experiments to mitigate randomness in training and evaluation.
+The experiments were conducted using the following computational infrastructure:
+- GPU: 4 × NVIDIA A100 (80GB)
+- CPU: Intel(R) Xeon(R) Platinum 8336C CPU @ 2.30GHz
+- System: Linux (Ubuntu 20.04)
+- Framework: PyTorch
+- Dependencies: All relevant libraries and their versions are listed in requirements.txt
